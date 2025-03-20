@@ -12,6 +12,9 @@ namespace CS3500.Networking;
 /// </summary>
 public sealed class NetworkConnection : IDisposable
 {
+    //TODO make sure you figure out how to do the testing for the thing with the configuration
+                    
+    
     /// <summary>
     ///   The connection/socket abstraction
     /// </summary>
@@ -65,8 +68,8 @@ public sealed class NetworkConnection : IDisposable
     {
         get
         {
-            // TODO: implement this
-            throw new NotImplementedException();
+            bool result = _tcpClient.GetStream() != null;
+            return result;
         }
     }
 

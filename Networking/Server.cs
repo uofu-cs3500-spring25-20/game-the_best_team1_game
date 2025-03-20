@@ -27,6 +27,9 @@ public static class Server
     public static void StartServer( Action<NetworkConnection> handleConnect, int port )
     {
         // TODO: Implement this
-        throw new NotImplementedException();
+        while (true)
+        {
+            
+        }
     }
 }
